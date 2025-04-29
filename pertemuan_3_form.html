@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Form</title>
+</head>
+<body>
+    <h3>Form</h3>
+    <!-- Form Atribute:
+    - name, berisi informasi nama form, nama form harus uniqe(tidak boleh ada nama yang sama) dalam satu file html
+    - action, berisi URL (bisa absolut atau relatif) kemana tujuan informasi ini akan d kirim.
+    - enctype berisi tipe data form, defaultnya "application/x-www-form-urlencoded", atau
+    "multipart/form-data" jika input data berisi file.  
+    - method, berisi aksi HTTP Method yang akan digunakan, jika  "get" maka informasi akan dikirim sebagai quaery parameter di URL,
+    jika "post" maka informasi akan dikirim di request body HTTP.
+    - target, berisi informasi dimana hasil form ini akan di tampilkan, defaultny adalah "_self" (dihalaman yang sama),
+    "_blank" (dihalaman berbeda). -->
+
+    <!-- Input Atribute :
+    - name,
+    - type, digunakan untuk memilih jenis input, 
+    - value, digunakan untuk mengubah nilai default dari input,
+    - disabled, digunakan untuk menjadikan input tidak aktif,
+    - readonly, digunakan untuk menjadikan input tidak bisa diubah nilainya
+    - required, digunakan untuk menandai bahwa input wajib diisi. -->
+
+    <!-- get : data akan dikirim melalui URL,
+    post : data akan di kirim melalui HTTPS request body maka data tidak akan terlihat. -->
+
+    <form name="registrasi" action="receive.html" method="get">
+        <label for="nama">Nama : </label> <br>
+        <input id="nama" type="text" name="pencarian"><br>
+        <label for="email">Email : </label> <br>
+        <input id="email" type="email" name="pencarian"><br>
+        <label for="telepon">Telepon : </label> <br>
+        <input id="telepon" type="number" name="pencarian"><br>
+        <label for="deskripsi">Deskripsi</label><br>
+        <textarea name="" id="deskripsi"></textarea><br>
+        <select name="" id="">
+            <option value="" selected disabled>Pilih Kota</option>
+            <option value="">Garut</option>
+            <option value="">Bandung</option>
+        </select> <br>
+        <input type="submit" value="Registrasi">
+    </form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio & Video </title>
+</head>
+<body>
+    <h1>Tugas Pertemuan 3</h1>
+    <h2>Contoh Penggunaan Audio dan Video</h2>
+    
+    <!-- Bagian Audio -->
+    <section>
+        <h3>1. Pemutar Audio Sederhana</h3>
+        <p>Lagu latar (format MP3):</p>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung elemen audio.
+        </audio>
+        
+        <h3>2. Audio dengan Autoplay dan Loop</h3>
+        <audio controls autoplay loop>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    
+    <!-- Bagian Video -->
+    <section>
+        <h3>3. Pemutar Video Sederhana</h3>
+        <p>Video contoh (format MP4):</p>
+        <video width="400" controls>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            Browser Anda tidak mendukung elemen video.
+        </video>
+        
+        <h3>4. Video dengan Poster dan Kontrol</h3>
+        <video width="400" controls poster="https://peach.blender.org/wp-content/uploads/bbb-splash.png">
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+        </video>
+        
+        <h3>5. Video Autoplay (Muted)</h3>
+        <video width="300" autoplay muted>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4">
+        </video>
+    </section>
+    
+    <!-- Catatan -->
+    <section>
+        <h3>Catatan:</h3>
+        <ul>
+            <li>Autoplay biasanya hanya bekerja jika video <em>muted</em></li>
+            <li>Ganti URL <code>src</code> dengan file lokal jika ingin menggunakan file sendiri</li>
+            <li>Format yang didukung: MP3, OGG (audio), MP4, WebM (video)</li>
+        </ul>
+    </section>
+</body>
+</html>
